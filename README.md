@@ -1,4 +1,4 @@
-learning_angular2
+learning_angular
 ================
 
 learning angular, testing different examples
