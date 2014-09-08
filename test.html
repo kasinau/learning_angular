@@ -14,6 +14,13 @@
         <li ng-click="erase()">Erase from history</li>
     </ul>
 </div>
+<div ng-controller="HeaderController">
+    <div ng-class="{error: isError, warning: isWarning}">
+        {{messageText}}
+    </div>
+    <button ng-click="showError()">Show error</button>
+    <button ng-click="showWarning()">Simulate warning</button>
+</div>
 <table ng-controller="RestaurantTableController">
     <tr ng-repeat="restaurant in directory" ng-click="selectRestaurant($index)" ng-class="{selected: $index == selectedRow}">
         <td>{{restaurant.name}}</td>
